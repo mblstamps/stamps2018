@@ -34,7 +34,7 @@ Schedule and information for STAMPS 2018
 * Mike Lee
 * 
 
-
+# Information
 
 #### <a name="21"></a> Course notes
 [STAMPS etherpad or Google doc]()
@@ -43,12 +43,15 @@ Schedule and information for STAMPS 2018
 
 * Slack 
 
+# Schedule
+
+All activities are in ... unless otherwise noted
 
 #### <a name="21"></a> Sunday 29 July 2018
 | Time       | Activity        | Location  |
 | ------------- |:-------------:| :-----:|
-| 15:00     | Check in after 3 pm | Front Desk at McCrary Dining Hall |
-| 19:00 | Meet & Greet  |    Carriage House Classroom |
+| 15:00     | Check in after 3 pm |  |
+| 19:00 | Meet & Greet  |    |
 
 #### <a name="22"></a> Monday 31 July 2018
 | Time       | Activity        | Location  |
