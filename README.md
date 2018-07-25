@@ -3,7 +3,7 @@
 Schedule and information for STAMPS 2018
 
 
-# Schedule EDAMAME 2017
+# Schedule STAMPS 2018
 * [30 July 2018](#21) <br>
 * [31 July 2018](#22) <br>
 * [01 August 2018](#23) <br>
@@ -37,7 +37,7 @@ Schedule and information for STAMPS 2018
 
 
 #### <a name="21"></a> Course notes
-[EDAMAME etherpad](https://public.etherpad-mozilla.org/p/EDAMAME2017)
+[STAMPS etherpad or Google doc]()
 
 #### Course Communications
 
@@ -50,7 +50,7 @@ Schedule and information for STAMPS 2018
 | 15:00     | Check in after 3 pm | Front Desk at McCrary Dining Hall |
 | 19:00 | Meet & Greet  |    Carriage House Classroom |
 
-#### <a name="22"></a> Monday 07 August 2017
+#### <a name="22"></a> Monday 31 July 2018
 | Time       | Activity        | Location  |
 | ------------- |:-------------:| :-----:|
 | 08:00 | Breakfast | McCrary Dining Hall |
@@ -66,7 +66,7 @@ Schedule and information for STAMPS 2018
 | 18:00 | Dinner  | McCrary Dining Hall   |
 | 19:30 | Lightning get-to-know-you presentations | Carriage House Classroom   |
 
-#### <a name="23"></a> Tuesday 08 August 2017
+#### <a name="23"></a> Tuesday 01 August 2018
 | Time       | Activity        | Location  |
 | ------------- |:-------------:| :-----:|
 | 08:00     | Breakfast | McCrary Dining Hall |
@@ -80,7 +80,7 @@ Schedule and information for STAMPS 2018
 | 19:00 | _Open office hours_: Taylor: [targeted gene assembly from metagenomes](https://github.com/edamame-course/Xander/blob/master/Xander.md) <br> Jackson: [Metagenome-assembled genomes](https://github.com/edamame-course/metagenome_binning/blob/master/binning_tutorial.md)[Jackson's Workflow](https://github.com/ShadeLab/CulturedThermophileMAGs/blob/master/Genome_Binning_Jackson_Notes.md) | Carriage House Classroom   |
 | 20:30 | Evening firepit | outside Carriage House   |
 
-#### <a name="24"></a>  Wednesday 09 August 2017
+#### <a name="24"></a>  Wednesday 02 August 2018
 | Time       | Activity        | Location  |
 | ------------- |:-------------:| :-----:|
 | 08:00 | Breakfast | McCrary Dining Hall |
@@ -96,7 +96,7 @@ Schedule and information for STAMPS 2018
 | 17:00 | Dinner  | Kalamazoooooooo |
 | 18:00 | Evening out: [Arcadia](http://arcadiaales.com/kalamazoo/) | Kalamazoo   |
 
-#### <a name="25"></a> Thursday 10 August 2017
+#### <a name="25"></a> Thursday 03 August 2018
 | Time       | Activity        | Location  |
 | ------------- |:-------------:| :-----:|
 | 08:00 | Breakfast | McCrary Dining Hall |
@@ -112,7 +112,7 @@ Schedule and information for STAMPS 2018
 | 17:00 | Dinner | McCrary Dining Hall |
 | 18:00 | Evening out: Bell's (optional) | Kalamazoo  |
 
-#### <a name="26"></a> Friday 11 August 2017
+#### <a name="26"></a> Friday 04 August 2018
 | Time       | Activity        | Location  |
 | ------------- |:-------------:| :-----:|
 | 08:00     | Breakfast | McCrary Dining Hall |
@@ -128,7 +128,7 @@ Schedule and information for STAMPS 2018
 | 21:30 | Evening firepit | outside Carriage House   |
 
 
-#### <a name="27"></a> Saturday 12 August 2017
+#### <a name="27"></a> Saturday 05 August 2018
 
 | Time       | Activity        | Location  |
 | ------------- |:-------------:| :-----:|
@@ -137,19 +137,34 @@ Schedule and information for STAMPS 2018
 | 10:30 | _Break_  | STRETCH  |
 | 10:45 | Course Close Up - [Post-Assessment](https://goo.gl/forms/PJbk8bT8wHIN4ZOw2)
 | 12:00 | Lunch   | McCrary Dining Hall   |
-Edit message
 
-Write a small message here explaining this change. (Optional)
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
-Press h to open a hovercard with more details.
+#### <a name="27"></a> Sunday 06 August 2018
+
+| Time       | Activity        | Location  |
+| ------------- |:-------------:| :-----:|
+| 08:00 | Breakfast with Dr. Heather Allen | Carriage House Classroom  |
+| 09:00 | Keynote Speaker:  Dr. Heather Allen, USDA Agricultural Research Service  |  Carriage House Classroom |
+| 10:30 | _Break_  | STRETCH  |
+| 10:45 | Course Close Up - [Post-Assessment](https://goo.gl/forms/PJbk8bT8wHIN4ZOw2)
+| 12:00 | Lunch   | McCrary Dining Hall   |
+
+
+#### <a name="27"></a> Monday 07 August 2018
+
+| Time       | Activity        | Location  |
+| ------------- |:-------------:| :-----:|
+| 08:00 | Breakfast with Dr. Heather Allen | Carriage House Classroom  |
+| 09:00 | Keynote Speaker:  Dr. Heather Allen, USDA Agricultural Research Service  |  Carriage House Classroom |
+| 10:30 | _Break_  | STRETCH  |
+| 10:45 | Course Close Up - [Post-Assessment](https://goo.gl/forms/PJbk8bT8wHIN4ZOw2)
+| 12:00 | Lunch   | McCrary Dining Hall   |
+
+#### <a name="27"></a> Tuesday 08 August 2018
+
+| Time       | Activity        | Location  |
+| ------------- |:-------------:| :-----:|
+| 08:00 | Breakfast with Dr. Heather Allen | Carriage House Classroom  |
+| 09:00 | Keynote Speaker:  Dr. Heather Allen, USDA Agricultural Research Service  |  Carriage House Classroom |
+| 10:30 | _Break_  | STRETCH  |
+| 10:45 | Course Close Up - [Post-Assessment](https://goo.gl/forms/PJbk8bT8wHIN4ZOw2)
+| 12:00 | Lunch   | McCrary Dining Hall   |
