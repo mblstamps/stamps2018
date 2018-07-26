@@ -47,6 +47,8 @@ Schedule and information for STAMPS 2018
 
 * [Slack](https://stamps2018.slack.com/)
 * [Course Google doc for notes: https://tinyurl.com/stamps2018notes](https://tinyurl.com/stamps2018notes)
+* Relevant papers
+* Additional resources
 
 # Schedule
 
