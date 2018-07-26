@@ -91,7 +91,7 @@ of the Swope building)  |
 | 12:00 | Lunch   | 
 | 14:00 | Taxonomic annotation and phylogeny (Tandy Warnow) |
 | 17:00 | Dinner  | 
-| 19:00 | Project introductions |
+| 19:00 | [Project introductions](projects/info.md) |
 
 #### <a name="25"></a> Thursday 03 August 2018
 | Time       | Activity        |
