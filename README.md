@@ -36,16 +36,16 @@ Schedule and information for STAMPS 2018
 
 # Information
 
-#### <a name="21"></a> Course notes
+### <a name="21"></a> Course notes
 [STAMPS etherpad or Google doc]()
 
-#### Course Communications
+### Course Communications
 
 * Slack 
 
 # Schedule
 
-All activities are in ... unless otherwise noted
+All activities are in Loeb G70 unless otherwise noted
 
 #### <a name="21"></a> Sunday 29 July 2018
 | Time       | Activity        | Location  |
@@ -54,34 +54,26 @@ All activities are in ... unless otherwise noted
 | 19:00 | Meet & Greet  |    |
 
 #### <a name="22"></a> Monday 31 July 2018
-| Time       | Activity        | Location  |
-| ------------- |:-------------:| :-----:|
-| 08:00 | Breakfast | McCrary Dining Hall |
-| 09:00      | Welcome |  Carriage House Classroom |
-| 09:15 | _Assessment_: [Front-end](https://docs.google.com/forms/d/e/1FAIpQLSd9SME_atCmRA_Pmwc3gFf3gUn5yaRlYlKojLXVdilnouYITQ/viewform?usp=sf_link) | Carriage House Classroom   |
-| 10:00 | _Discussion/Lecture:_ [Computing workflows for biologists](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002303) (Tracy)  [Lecture](https://github.com/edamame-course/2017-tutorials/blob/master/EDAMAME_computing_workflows.pdf)</br> 
-| 10:30 | _Break_  | GO OUTSIDE!   |
-| 11:00 | _Tutorial_: [Logging into EC2](http://ec2-tutorials.readthedocs.io/en/latest/index.html) (Adina Howe) </br> TA: Phil Colgan   | Carriage House Classroom  
-| 12:00 | Lunch   | McCrary Dining Hall   |
-| 13:00 | [Shell Tutorial](http://germslab.org/softwarecarpentry/day1.shell/) (Jared Flater) <br> TA:  Phil Colgan |  Carriage House Classroom |
-| 15:30 | [Moving Data To and Fro EC2](http://ec2-tutorials.readthedocs.io/en/latest/transfer-data.html) (Adina Howe) |  Carriage House Classroom |
-| 16:00 | Afternoon Break   | Frolic in nature  |
-| 18:00 | Dinner  | McCrary Dining Hall   |
-| 19:30 | Lightning get-to-know-you presentations | Carriage House Classroom   |
+| Time       | Activity        |
+| ------------- |:-------------:|
+| 09:00      | Welcome & Code of Conduct (Mihai Pop and Tracy Teal) |
+| 09:15 | Introduction to MBL and Microbiome Science (Mitch Sogin) |
+| 10:15 | Break|
+| 10:30 | _Tutorial_: Introduction to the command line & MBL infrastructure (Mike Lee) |
+| 12:00 | Lunch   | 
+| 14:00 | _Tutorial:_ [Introduction to R](https://datacarpentry.org/R-ecology-lesson/) (Tracy Teal) |
+| 17:00 | Dinner  | McCrary Dining Hall   |
+| 19:00 | More R: Open lab self-guided or class tutorial |
 
 #### <a name="23"></a> Tuesday 01 August 2018
-| Time       | Activity        | Location  |
-| ------------- |:-------------:| :-----:|
-| 08:00     | Breakfast | McCrary Dining Hall |
-| 09:00 |  [_Tutorials:_ Making and using local BLAST databases](https://github.com/edamame-course/BLAST-tutorial/blob/master/running-BLAST.md) (Tracy) <br> TA:  Jared Flater | Carriage House Classroom 
-| 10:30 | _Break_  | Tea and coffee |
-| 10:45 | [Fetching data from NCBI](http://blast-tutorial.readthedocs.io/en/latest/ncbi/index.html) (Adina Howe) <br> Co-Instructor: Schuyler Smith | Carriage House Classroom  |
-| 12:00 | Lunch   | McCrary Dining Hall   |
-| 13:15 | [Data visualization](http://germslab.org/datavisualization/index.html) (Adina Howe) <br> Co-Instructor: Jared Flater  |  Carriage House Classroom |
-| 16:00 | Afternoon Break   | Swim! |
-| 18:00 | Dinner  | McCrary Dining Hall   |
-| 19:00 | _Open office hours_: Taylor: [targeted gene assembly from metagenomes](https://github.com/edamame-course/Xander/blob/master/Xander.md) <br> Jackson: [Metagenome-assembled genomes](https://github.com/edamame-course/metagenome_binning/blob/master/binning_tutorial.md)[Jackson's Workflow](https://github.com/ShadeLab/CulturedThermophileMAGs/blob/master/Genome_Binning_Jackson_Notes.md) | Carriage House Classroom   |
-| 20:30 | Evening firepit | outside Carriage House   |
+| Time       | Activity        | 
+| ------------- |:-------------:| 
+| 09:00 |  Introduction to MBL (note: in Lillie auditorium) |
+| 10:15 | _Tutorial_: Metagenomics approaches, course structure (Mihai Pop) |
+| 12:00 | Lunch   |
+| 14:00 | _Tutorial_: Statistics & statistical thinking (Amy Willis) |
+| 17:00 | Dinner  | 
+| 19:00 | _Open lab_: UNIX and R |
 
 #### <a name="24"></a>  Wednesday 02 August 2018
 | Time       | Activity        | Location  |
