@@ -2,6 +2,7 @@
 
 Schedule and information for STAMPS 2018
 
+#stamps2018
 
 # Schedule STAMPS 2018
 * [30 July 2018](#21) <br>
@@ -37,12 +38,15 @@ Schedule and information for STAMPS 2018
 
 # Information
 
-### <a name="21"></a> Course notes
-[STAMPS etherpad or Google doc]()
+### Code of Conduct and Accessibility
 
-### Course Communications
+* We operate under a [Code of Conduct]
+* If you have any accessibility needs or would like support for nursing, contact Tracy Teal
 
-* Slack 
+### Course Communications and Notes
+
+* [Slack](https://stamps2018.slack.com/)
+* [Course Google doc for notes: https://tinyurl.com/stamps2018notes](https://tinyurl.com/stamps2018notes)
 
 # Schedule
 
