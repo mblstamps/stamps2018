@@ -2,7 +2,7 @@
 
 Schedule and information for STAMPS 2018 [#stamps2018](https://twitter.com/hashtag/stamps2018)
 
-See these [Before you arrive](beforeyouarrive.md) notes on what to install before the course.
+See these [before you arrive](beforeyouarrive.md) notes on what to install before the course.
 
 # Schedule STAMPS 2018
 * [29 July 2018](#20) <br>
