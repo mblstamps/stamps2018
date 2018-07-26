@@ -15,7 +15,6 @@ Schedule and information for STAMPS 2018
 * [06 August 2018](#28) <br>
 * [07 August 2018](#29) <br>
 * [08 August 2018](#30) <br>
-* [09 August 2018](#31) <br>
 
 # Workshop Instructors and Lecturers
 * Mihai Pop
@@ -58,12 +57,12 @@ Schedule and information for STAMPS 2018
 
 All activities are in Loeb G70 unless otherwise noted
 
-#### <a name="21"></a> Sunday 29 July 2018
+#### Sunday 29 July 2018
 | **Time**       | **Activity**        |
 | ------------- |:-------------:|
 | 19:00 | Opening Reception (Meigs Room on the second floor of the Swope building)  |  
 
-#### <a name="22"></a> Monday 31 July 2018
+#### <a name="21"></a> Monday 30 July 2018
 | Time       | Activity        |
 | ------------- |:-------------:|
 | 09:00      | Welcome & Code of Conduct (Mihai Pop and Tracy Teal) |
@@ -76,7 +75,7 @@ All activities are in Loeb G70 unless otherwise noted
 | 19:00 | _Guest Lecture:_ Jay Lennon |
 | 20:00 | More R: Open lab self-guided or class tutorial |
 
-#### <a name="23"></a> Tuesday 01 August 2018
+#### <a name="22"></a> Tuesday 31 July 2018
 | Time       | Activity        | 
 | ------------- |:-------------:| 
 | 09:00 |  Introduction to MBL (note: in Lillie auditorium) |
@@ -87,7 +86,7 @@ All activities are in Loeb G70 unless otherwise noted
 | 19:00 | _Tutorial_: phyloseq (Susan Holmes) |
 | 20:00 | _Open lab_: More practice with UNIX, R or phyloseq |
 
-#### <a name="24"></a>  Wednesday 02 August 2018
+#### <a name="23"></a>  Wednesday 01 August 2018
 | Time       | Activity        |
 | ------------- |:-------------:|
 | 09:00 | _Lecture:_ OTU Clustering and workflow (Tracy Teal)   |
@@ -97,7 +96,7 @@ All activities are in Loeb G70 unless otherwise noted
 | 17:00 | Dinner  | 
 | 19:00 | [Project introductions](projects/info.md) |
 
-#### <a name="25"></a> Thursday 03 August 2018
+#### <a name="24"></a> Thursday 02 August 2018
 | Time       | Activity        |
 | ------------- |:-------------:| 
 | 09:30 | Statistical estimation: alpha diversity, beta diversity, differential abundance (Amy Willis) |
@@ -109,7 +108,7 @@ All activities are in Loeb G70 unless otherwise noted
 | 19:00 | Heterogeneous Data (Susan Holmes) |
 | 20:00 | _Open Lab_ |
 
-#### <a name="26"></a> Friday 04 August 2018
+#### <a name="25"></a> Friday 03 August 2018
 | Time       | Activity        | 
 | ------------- |:-------------:| 
 | 09:00 | QIIME2 (Rob Knight) |
@@ -119,7 +118,7 @@ All activities are in Loeb G70 unless otherwise noted
 | 19:00 |    |
 
 
-#### <a name="27"></a> Saturday 05 August 2018
+#### <a name="26"></a> Saturday 04 August 2018
 
 | Time       | Activity        | 
 | ------------- |:-------------:| 
@@ -128,14 +127,13 @@ All activities are in Loeb G70 unless otherwise noted
 | 14:00 | Introduction to genome assembly (Titus Brown, Todd Treangen) |
 | 17:00 | Lobster boil (Meigs room in Swope)
 
-#### <a name="28"></a> Sunday 06 August 2018
+#### <a name="27"></a> Sunday 05 August 2018
 
 | Time       | Activity        |
 | ------------- |:-------------:| 
 | Day Off | |
 
-
-#### <a name="29"></a> Monday 07 August 2018
+#### <a name="28"></a> Monday 06 August 2018
 
 | Time       | Activity        |
 | ------------- |:-------------:|
@@ -148,7 +146,7 @@ All activities are in Loeb G70 unless otherwise noted
 | 19:00 | _Guest Lecture_ |
 | 20:00 | _Open Lab_ |
 
-#### <a name="30"></a> Tuesday 08 August 2018
+#### <a name="29"></a> Tuesday 07 August 2018
 
 | Time       | Activity        |
 | ------------- |:-------------:| 
@@ -158,7 +156,7 @@ All activities are in Loeb G70 unless otherwise noted
 | 17:00 | Dinner |
 | 19:00 | _Open Lab_ |
 
-#### <a name="31"></a> Wednesday 09 August 2018
+#### <a name="30"></a> Wednesday 08 August 2018
 
 | Time       | Activity        |
 | ------------- |:-------------:| 
