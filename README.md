@@ -85,7 +85,7 @@ All activities are in Loeb G70 unless otherwise noted
 | 14:00 | Statistics & statistical thinking (Amy Willis) |
 | 17:00 | Dinner  | 
 | 19:00 | _Tutorial_: phyloseq (Susan Holmes) |
-| 19:00 | _Open lab_: UNIX and R |
+| 20:00 | _Open lab_: More practice with UNIX, R or phyloseq |
 
 #### <a name="24"></a>  Wednesday 02 August 2018
 | Time       | Activity        |
