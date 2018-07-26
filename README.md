@@ -1,10 +1,11 @@
 # STAMPS 2018
 
-Schedule and information for STAMPS 2018
+Schedule and information for STAMPS 2018 [#stamps2018](https://twitter.com/hashtag/stamps2018)
 
-[#stamps2018](https://twitter.com/hashtag/stamps2018)
+See these [Before you arrive](beforeyouarrive.md) notes on what to install before the course.
 
 # Schedule STAMPS 2018
+* [29 July 2018](#20) <br>
 * [30 July 2018](#21) <br>
 * [31 July 2018](#22) <br>
 * [01 August 2018](#23) <br>
@@ -53,11 +54,16 @@ Schedule and information for STAMPS 2018
 * Relevant papers
 * Additional resources
 
+### Installation notes
+
+You will need various tools and software packages throughout the course. 
+[Installation instructions](installation.md)
+
 # Schedule
 
 All activities are in Loeb G70 unless otherwise noted
 
-#### Sunday 29 July 2018
+#### a name="20"></a> Sunday 29 July 2018
 | **Time**       | **Activity**        |
 | ------------- |:-------------:|
 | 19:00 | Opening Reception (Meigs Room on the second floor of the Swope building)  |  
