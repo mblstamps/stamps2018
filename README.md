@@ -82,7 +82,7 @@ of the Swope building)  |
 | ------------- |:-------------:| 
 | 09:00 |  Introduction to MBL (note: in Lillie auditorium) |
 | 10:15 | Metagenomics approaches, course structure (Mihai Pop) |
-| 12:00 | Lunch   |
+| 12:15 | Promega Lunch (Swope private dining room)   |
 | 14:00 | Statistics & statistical thinking (Amy Willis) |
 | 17:00 | Dinner  | 
 | 19:00 | _Open lab_: UNIX and R |
