@@ -11,9 +11,10 @@ Schedule and information for STAMPS 2018
 * [03 August 2018](#25) <br>
 * [04 August 2018](#26) <br>
 * [05 August 2018](#27) <br>
-* [06 August 2018](#25) <br>
-* [07 August 2018](#26) <br>
-* [08 August 2018](#27) <br>
+* [06 August 2018](#28) <br>
+* [07 August 2018](#29) <br>
+* [08 August 2018](#30) <br>
+* [09 August 2018](#31) <br>
 
 # Workshop Instructors and Lecturers
 * Mihai Pop
@@ -63,7 +64,8 @@ All activities are in Loeb G70 unless otherwise noted
 | 12:00 | Lunch   | 
 | 14:00 | _Tutorial:_ [Introduction to R](https://datacarpentry.org/R-ecology-lesson/) (Tracy Teal) |
 | 17:00 | Dinner  | McCrary Dining Hall   |
-| 19:00 | More R: Open lab self-guided or class tutorial |
+| 19:00 | _Guest Lecture:_ Jay Lennon |
+| 20:00 | More R: Open lab self-guided or class tutorial |
 
 #### <a name="23"></a> Tuesday 01 August 2018
 | Time       | Activity        | 
@@ -100,55 +102,56 @@ All activities are in Loeb G70 unless otherwise noted
 #### <a name="26"></a> Friday 04 August 2018
 | Time       | Activity        | 
 | ------------- |:-------------:| 
-| 09:00 | _Tutorial:_ [mothur](https://mothur.org/wiki/EDAMAME) (Pat Schloss)  [Slide](http://bit.ly/EDAMAME_mothur_2017) | Carriage House Classroom 
-| 10:30 | _Break_  | Tea and coffee, please   |
-| 10:45 | _Tutorial:_  [mothur](https://mothur.org/wiki/EDAMAME) (Pat Schloss ) | Carriage House Classroom  |
-| 12:00 | Lunch   | McCrary Dining Hall   |
-| 13:15 | _Tutorial:_  [mothur](https://mothur.org/wiki/EDAMAME) (Pat Schloss)  |  Carriage House Classroom |
-| 16:00 | _Guest Lecture:_ Q&A with James Tiedje (Michigan State)   | Carriage House Classroom |
-| 17:30 | Break!  | Smile! |
-| 18:00 | Dinner with Jim | Carriage house classroom   |
-| 20:00 | _Guest Lecture:_ Pat Schloss, University of Michigan | Carriage House Classroom   |
-| 21:30 | Evening firepit | outside Carriage House   |
+| 09:00 | QIIME2 (Rob Knight) |
+| 12:00 | Lunch   |
+| 14:00 | QIIME2 (Rob Knight) |
+| 17:00 | Dinner |
+| 19:00 |    |
 
 
 #### <a name="27"></a> Saturday 05 August 2018
 
-| Time       | Activity        | Location  |
-| ------------- |:-------------:| :-----:|
-| 08:00 | Breakfast with Dr. Heather Allen | Carriage House Classroom  |
-| 09:00 | Keynote Speaker:  Dr. Heather Allen, USDA Agricultural Research Service  |  Carriage House Classroom |
-| 10:30 | _Break_  | STRETCH  |
-| 10:45 | Course Close Up - [Post-Assessment](https://goo.gl/forms/PJbk8bT8wHIN4ZOw2)
-| 12:00 | Lunch   | McCrary Dining Hall   |
+| Time       | Activity        | 
+| ------------- |:-------------:| 
+| 09:00 | Network analysis (Christian Müller) |
+| 12:00 | Lunch   | 
+| 14:00 | Introduction to genome assembly (Titus Brown, Todd Treangen) |
+| 17:30 | Lobster boil (Meigs room in Swope)
 
-#### <a name="27"></a> Sunday 06 August 2018
+#### <a name="28"></a> Sunday 06 August 2018
 
-| Time       | Activity        | Location  |
-| ------------- |:-------------:| :-----:|
-| 08:00 | Breakfast with Dr. Heather Allen | Carriage House Classroom  |
-| 09:00 | Keynote Speaker:  Dr. Heather Allen, USDA Agricultural Research Service  |  Carriage House Classroom |
-| 10:30 | _Break_  | STRETCH  |
-| 10:45 | Course Close Up - [Post-Assessment](https://goo.gl/forms/PJbk8bT8wHIN4ZOw2)
-| 12:00 | Lunch   | McCrary Dining Hall   |
+| Time       | Activity        |
+| ------------- |:-------------:| 
+| Day Off | |
 
 
-#### <a name="27"></a> Monday 07 August 2018
+#### <a name="29"></a> Monday 07 August 2018
 
-| Time       | Activity        | Location  |
-| ------------- |:-------------:| :-----:|
-| 08:00 | Breakfast with Dr. Heather Allen | Carriage House Classroom  |
-| 09:00 | Keynote Speaker:  Dr. Heather Allen, USDA Agricultural Research Service  |  Carriage House Classroom |
-| 10:30 | _Break_  | STRETCH  |
-| 10:45 | Course Close Up - [Post-Assessment](https://goo.gl/forms/PJbk8bT8wHIN4ZOw2)
-| 12:00 | Lunch   | McCrary Dining Hall   |
+| Time       | Activity        |
+| ------------- |:-------------:|
+| 09:00 | Assembly: reference-guided, strain resolution (Todd Treangen)
+| 10: 15 | Break |
+| 10:30 | Assembly: binning (Christian Müller) |
+| 12:00 | Lunch   | 
+| 14:00 | Strain-level analyses (Titus Brown, Todd Treangen) |
+| 17:00 | Dinner |
+| 19:00 | _Guest Lecture_ |
+| 20:00 | _Open Lab_ |
 
-#### <a name="27"></a> Tuesday 08 August 2018
+#### <a name="30"></a> Tuesday 08 August 2018
 
-| Time       | Activity        | Location  |
-| ------------- |:-------------:| :-----:|
-| 08:00 | Breakfast with Dr. Heather Allen | Carriage House Classroom  |
-| 09:00 | Keynote Speaker:  Dr. Heather Allen, USDA Agricultural Research Service  |  Carriage House Classroom |
-| 10:30 | _Break_  | STRETCH  |
-| 10:45 | Course Close Up - [Post-Assessment](https://goo.gl/forms/PJbk8bT8wHIN4ZOw2)
-| 12:00 | Lunch   | McCrary Dining Hall   |
+| Time       | Activity        |
+| ------------- |:-------------:| 
+| 09:00 | Comparative metagenomics (k-mer based approaches, etc.) (Titus Brown)
+| 12:00 | Lunch   | 
+| 14:00 | Functional analyses (Curtis Huttenhower) |
+| 17:00 | Dinner |
+| 19:00 | _Open Lab_ |
+
+#### <a name="31"></a> Wednesday 09 August 2018
+
+| Time       | Activity        |
+| ------------- |:-------------:| 
+| 09:00 | Presentations by student groups
+| 11:30 | Survey and course close out |
+| 12:00 | Lunch   | 
