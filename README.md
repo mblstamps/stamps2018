@@ -84,6 +84,7 @@ All activities are in Loeb G70 unless otherwise noted
 | 12:15 | Promega Lunch (Swope private dining room)   |
 | 14:00 | Statistics & statistical thinking (Amy Willis) |
 | 17:00 | Dinner  | 
+| 19:00 | _Tutorial_: phyloseq (Susan Holmes) |
 | 19:00 | _Open lab_: UNIX and R |
 
 #### <a name="24"></a>  Wednesday 02 August 2018
