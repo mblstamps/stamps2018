@@ -69,48 +69,37 @@ All activities are in Loeb G70 unless otherwise noted
 | Time       | Activity        | 
 | ------------- |:-------------:| 
 | 09:00 |  Introduction to MBL (note: in Lillie auditorium) |
-| 10:15 | _Tutorial_: Metagenomics approaches, course structure (Mihai Pop) |
+| 10:15 | Metagenomics approaches, course structure (Mihai Pop) |
 | 12:00 | Lunch   |
-| 14:00 | _Tutorial_: Statistics & statistical thinking (Amy Willis) |
+| 14:00 | Statistics & statistical thinking (Amy Willis) |
 | 17:00 | Dinner  | 
 | 19:00 | _Open lab_: UNIX and R |
 
 #### <a name="24"></a>  Wednesday 02 August 2018
-| Time       | Activity        | Location  |
-| ------------- |:-------------:| :-----:|
-| 08:00 | Breakfast | McCrary Dining Hall |
-| 08:30 | _Discussion:_ Sequencing workflows - Chalk Talk (Adina Howe) | Carriage House Classroom   |
-| 10:00 | [_Tutorial_: Introduction to tmux](https://github.com/edamame-course/2015-tutorials/blob/master/final/2015-06-22_tmux.md) (Jackson Sorensen)<br> Co-Instructor Taylor Dunivin| Carriage House Classroom   |
-| 10:30 | _Break_  | Tea and coffee, please   |
-| 10:45 | _Tutorial:_  [metaG sequencing preprocessing, quality control, and trimming](https://github.com/edamame-course/Metagenome/blob/master/2017-08-09-metaG-sequencing-preprocessing.md) (Jin Choi) <br> Co-Instructor: Jackson  |Carriage House Classroom   |
-| 12:00 | Lunch   | McCrary Dining Hall   |
-| 13:00 | _Tutorial:_  [metaG assembly](https://github.com/edamame-course/Metagenome/blob/master/2017-08-09-metaG-assembly.md) (Jin Choi) <br> Co-Instructor Jackson  |Carriage House Classroom   |
-| 14:00 | _Tutorial:_ [Evaluating Assemblies](https://github.com/edamame-course/Metagenome/blob/master/2017-08-09-assessing-metagenome-assembly.md) (Jin Choi) <br> Co-Instructor: Jackson | Carriage House Classroom   |
-| 15:00 | _Tutorial:_ Continue: [Counting abundances with mapped reads](https://github.com/edamame-course/Metagenome/blob/master/2017-08-09-counting-abundance-with-mapped-reads.md) ; [Slide](https://github.com/edamame-course/Metagenome/blob/master/metagenome_tutorial.pdf)(Jin Choi) <br> Co-Instructor Jackson | Carriage House Classroom   |
-| 16:00 | Afternoon Break   | Swim! |
-| 17:00 | Dinner  | Kalamazoooooooo |
-| 18:00 | Evening out: [Arcadia](http://arcadiaales.com/kalamazoo/) | Kalamazoo   |
+| Time       | Activity        |
+| ------------- |:-------------:|
+| 09:00 | _Lecture:_ OTU Clustering and workflow (Tracy Teal)   |
+| 10:00 | Amplicon sequence variant assignment--DADA2 (Susan Holmes)  |
+| 12:00 | Lunch   | 
+| 14:00 | Taxonomic annotation and phylogeny (Tandy Warnow) |
+| 17:00 | Dinner  | 
+| 19:00 | Project introductions |
 
 #### <a name="25"></a> Thursday 03 August 2018
-| Time       | Activity        | Location  |
-| ------------- |:-------------:| :-----:|
-| 08:00 | Breakfast | McCrary Dining Hall |
-| 08:30 | [_Lecture_: Comparative and within-sample diversity](https://github.com/edamame-course/2017-tutorials/blob/master/2017_08_10_Shade_Diversity_rev2.pdf)(Ashley) <br> [Diversity is not the answer](http://www.nature.com/ismej/journal/v11/n1/full/ismej2016118a.html)| Carriage House Classroom   |
-| 09:30 | _Tutorial:_ Introduction to ecological analysis in R [Git clone repo for data files](https://github.com/edamame-course/Jones_R_Files)(Stuart)  |  Carriage House Classroom |
-| 10:30 | _Break_  | Yes!  |
-|10:45 | _Tutorial:_ More R (Stuart)   | Carriage House Classroom   |
-| 11:45 | Group photo | Meet outside Carriage House |
-| 12:00 | Lunch   | McCrary Dining Hall   |
-| 13:15 | _Tutorial:_ Even more R! (Stuart)   | Carriage House Classroom   |
-| 16:00 | Break | Relax! |
-| 16:15 | _Guest Lecture:_ Stuart Jones, University of Notre Dame | Carriage House Classroom  |
-| 17:00 | Dinner | McCrary Dining Hall |
-| 18:00 | Evening out: Bell's (optional) | Kalamazoo  |
+| Time       | Activity        |
+| ------------- |:-------------:| 
+| 09:30 | Statistical estimation: alpha diversity, beta diversity, differential abundance (Amy Willis) |
+| 12:00 | Lunch   |
+| 14:00 | Documentation and Interaction with RStudio, Shiny (JJ) |
+| 15:00 | Break |
+| 15:15 | Exploratory multivariate visualization (Susan Holmes)  |
+| 17:00 | Dinner |
+| 19:00 | Heterogeneous Data (Susan Holmes) |
+| 20:00 | _Open Lab_ |
 
 #### <a name="26"></a> Friday 04 August 2018
-| Time       | Activity        | Location  |
-| ------------- |:-------------:| :-----:|
-| 08:00     | Breakfast | McCrary Dining Hall |
+| Time       | Activity        | 
+| ------------- |:-------------:| 
 | 09:00 | _Tutorial:_ [mothur](https://mothur.org/wiki/EDAMAME) (Pat Schloss)  [Slide](http://bit.ly/EDAMAME_mothur_2017) | Carriage House Classroom 
 | 10:30 | _Break_  | Tea and coffee, please   |
 | 10:45 | _Tutorial:_  [mothur](https://mothur.org/wiki/EDAMAME) (Pat Schloss ) | Carriage House Classroom  |
