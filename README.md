@@ -61,8 +61,7 @@ All activities are in Loeb G70 unless otherwise noted
 #### <a name="21"></a> Sunday 29 July 2018
 | **Time**       | **Activity**        |
 | ------------- |:-------------:|
-| 19:00 | Opening Reception (Meigs Room on the second floor
-of the Swope building)  |  
+| 19:00 | Opening Reception (Meigs Room on the second floor of the Swope building)  |  
 
 #### <a name="22"></a> Monday 31 July 2018
 | Time       | Activity        |
