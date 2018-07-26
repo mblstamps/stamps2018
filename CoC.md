@@ -1,6 +1,6 @@
 ## STAMPS Code of Conduct
 
-All STAMPS attendees are expected to agree with the following code of conduct. We will enforce this code as needed. We expect cooperation from all attendees to help ensuring a safe environment for everybody. Additional the Marine Biological Laboratory expects [respect and responsibility](http://www.mbl.edu/hr/files/2013/12/2017-MBL-Respect-and-Responsiblity-Flyer.pdf)has a formal [Code of Conduct](http://www.mbl.edu/policies/code-of-conduct/).
+All STAMPS attendees are expected to agree with the following code of conduct. We will enforce this code as needed. We expect cooperation from all attendees to help ensuring a safe environment for everybody. Additionally the Marine Biological Laboratory expects [respect and responsibility](http://www.mbl.edu/hr/files/2013/12/2017-MBL-Respect-and-Responsiblity-Flyer.pdf) and has a formal [Code of Conduct](http://www.mbl.edu/policies/code-of-conduct/).
 
 ### The Quick Version
 STAMPS events are neither a dating scene nor an intellectual contest.
