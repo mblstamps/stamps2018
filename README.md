@@ -40,8 +40,8 @@ Schedule and information for STAMPS 2018
 
 ### Code of Conduct and Accessibility
 
-* We operate under a [Code of Conduct]
-* If you have any accessibility needs or would like support for nursing, contact Tracy Teal
+* We operate under a [Code of Conduct](CoC.md)
+* If you have any accessibility needs or need designated time or space for nursing, contact Tracy Teal or MBL's [Equal Employment Opportunity Coordinator](http://www.mbl.edu/hr/employment/equal-employment-opportunity-affirmative-action/accommodation-of-individuals-with-disabilities/)
 
 ### Course Communications and Notes
 
@@ -55,8 +55,8 @@ All activities are in Loeb G70 unless otherwise noted
 #### <a name="21"></a> Sunday 29 July 2018
 | **Time**       | **Activity**        |
 | ------------- |:-------------:|
-| 15:00     | Check in after 3 pm | 
-| 19:00 | Meet & Greet  |  
+| 19:00 | Opening Reception (Meigs Room on the second floor
+of the Swope building)  |  
 
 #### <a name="22"></a> Monday 31 July 2018
 | Time       | Activity        |
@@ -120,7 +120,7 @@ All activities are in Loeb G70 unless otherwise noted
 | 09:00 | Network analysis (Christian Müller) |
 | 12:00 | Lunch   | 
 | 14:00 | Introduction to genome assembly (Titus Brown, Todd Treangen) |
-| 17:30 | Lobster boil (Meigs room in Swope)
+| 17:00 | Lobster boil (Meigs room in Swope)
 
 #### <a name="28"></a> Sunday 06 August 2018
 
