@@ -2,7 +2,7 @@
 
 Schedule and information for STAMPS 2018
 
-#stamps2018
+[#stamps2018](https://twitter.com/hashtag/stamps2018)
 
 # Schedule STAMPS 2018
 * [30 July 2018](#21) <br>
