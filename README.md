@@ -31,10 +31,14 @@ Schedule and information for STAMPS 2018
 * Curtis Huttenhower
 * Jay Lennon
 
-
 # Workshop TAs
-* Mike Lee
-* 
+* Evan Bolyen
+* Jessica Chopyk
+* Michael Lee
+* Bryan Martin
+* Daniel Nasko
+* Michael Nute
+* Pauline Trinh
 
 # Information
 
