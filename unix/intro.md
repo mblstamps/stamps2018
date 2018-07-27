@@ -34,7 +34,9 @@
 *  automation of repetitive tasks
 	*  need to rename 1,000 files?
 	*  need to assemble 300 genomes?
-*  enables use of higher-powered computers elsewhere (server/cloud)  
+*  enables use of higher-powered computers elsewhere (server/cloud)
+*  it's the foundation for most of bioinformatics
+
 <br>
 
 ---
