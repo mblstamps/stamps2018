@@ -1,11 +1,11 @@
 # Introduction to Unix
 > **Things covered here**  
-*  Why familiarity with the command line is important
-*  Running commands and general syntax
-*  File-system structure and how to navigate
-*  Viewing, creating, and manipulating "plain-text" documents
-*  Pipes and redirectors
-*  Intro to wildcards
+> *  Why familiarity with the command line is important
+> *  Running commands and general syntax
+> *  File-system structure and how to navigate
+> *  Viewing, creating, and manipulating "plain-text" documents
+> *  Pipes and redirectors
+> *  Intro to wildcards
 
 <br>
 
@@ -13,7 +13,6 @@
 <br>
 
 # Some terminology
-[comment]: <> (Some terms we hear a lot, that in common talk are often used interchangeably. These are not authoritative definitions. This is just how I've come to think of them through exposure and communication with others.)
 
 - "**Unix**" – Unix is a type of operating system, or more precisely, a family of operating systems as the [wiki](https://en.wikipedia.org/wiki/Unix) words it. This is why you will hear people say things like “Unix-like”, and refer to Unix being on both Mac and Linux computers (they run Unix-like operating systems).
 
@@ -107,6 +106,7 @@ Note that when we provided the `-u` flag to the `date` command (to get the comma
 
 ---
 <br>
+
 # File-system structure and moving around
 
 ## Absolute vs relative path
