@@ -102,10 +102,12 @@ head -n 5 text.txt
 Note that when we provided the `-u` flag to the `date` command (to get the command to print UTC time instead of local), we didn't need to provide any arguments to that particular flag (it's just on/off). But with the `-n` flag to `head`, we are specifying the number of lines we want to print out, so we have to provide a number in this case.
 
 > This is the framework for how all things work at the command line! Multiple commands can be strung together, and some commands can have many options and can grow to be quite long, but this general framework is underlying it all. **Becoming familiar with the baseline rules is important, memorizing particular commands and options is not!**
+
 <br>
 
 ---
 <br>
+
 # System file-structure and moving around
 
 <h4><i>Commands presented in this section:</i></h4>
