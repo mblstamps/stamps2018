@@ -14,7 +14,6 @@
 <br>
 
 # Some terminology
-[comment]: <> (Some terms we hear a lot, that in common talk are often used interchangeably. These are not authoritative definitions. This is just how I've come to think of them through exposure and communication with others.)
 
 - "**Unix**" – Unix is a type of operating system, or more precisely, a family of operating systems as the [wiki](https://en.wikipedia.org/wiki/Unix) words it. This is why you will hear people say things like “Unix-like”, and refer to Unix being on both Mac and Linux computers (they run Unix-like operating systems).
 
