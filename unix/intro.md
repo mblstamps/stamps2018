@@ -72,7 +72,7 @@ Arguments (often also referred to as "flags" or "options") can be **optional** o
 ```bash
 date
 ```
-But you can provide optional arguments to `date`. Here we are adding the `-u` argument to tell it instead of local time (the "default"): 
+But you can provide optional arguments to `date`. Here we are adding the `-u` argument to tell it to report UTC time instead of local (the "default"): 
 
 ```bash
 date -u
