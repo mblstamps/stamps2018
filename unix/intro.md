@@ -1,12 +1,11 @@
 # Introduction to Unix
-
 > **Things covered here**  
-> *  Why familiarity with the command line is important
-> *  Running commands and general syntax
-> *  System file-structure and how to navigate
-> *  Viewing, creating, and manipulating "plain-text" documents
-> *  Pipes and redirectors
-> *  Intro to wildcards
+*  Why familiarity with the command line is important
+*  Running commands and general syntax
+*  File-system structure and how to navigate
+*  Viewing, creating, and manipulating "plain-text" documents
+*  Pipes and redirectors
+*  Intro to wildcards
 
 <br>
 
@@ -14,6 +13,7 @@
 <br>
 
 # Some terminology
+[comment]: <> (Some terms we hear a lot, that in common talk are often used interchangeably. These are not authoritative definitions. This is just how I've come to think of them through exposure and communication with others.)
 
 - "**Unix**" – Unix is a type of operating system, or more precisely, a family of operating systems as the [wiki](https://en.wikipedia.org/wiki/Unix) words it. This is why you will hear people say things like “Unix-like”, and refer to Unix being on both Mac and Linux computers (they run Unix-like operating systems).
 
@@ -89,11 +89,11 @@ Some commands require arguments and won't work without them. `head` is a command
 head text.txt
 ```
 
-Here "text.txt" is the required argument, and in this case it is also what's known as a **positional** argument. This is because we aren't identifying what it is with a preceding flag or anything. We are just listing it after the command, and the `head` command knows what to do with it. But this depends on how the command was written. Sometimes you need to specify the input file to a command (e.g. some commands will use the `-i` flag, but it's often other things as well).
+Here "text.txt" is the **required** argument, and in this case it is also what's known as a **positional** argument. This is because we aren't identifying what it is with a preceding flag or anything. We are just listing it after the command, and the `head` command knows what to do with it. But this depends on how the command was written. Sometimes you need to specify the input file to a command (e.g. some commands will use the `-i` flag, but it's often other things as well).
 
-If we ran `head` with no file to act on, it would get stuck. We know the terminal is still doing something (or trying to in this case) because our "prompt" hasn't returned. You can cancel an operation by pressing the "control" key and the "c" key simultaneously. 
+If we ran `head` with no file to act on, it would get stuck. We know the terminal is still doing something (or trying to in this case) because our "prompt" hasn't returned. You can cancel an operation by pressing the "control" key and the "c" key simultaneously (`ctrl + c`). 
 
-The file to act upon is a **required** argument for the `head` command. But there are optional arguments for this command too. The default for `head` is to print the first 10 lines of a file. We can change that by specifying the `-n` flag, followed by how many lines we want:
+There are also optional arguments for the `head` command. The default for `head` is to print the first 10 lines of a file. We can change that by specifying the `-n` flag, followed by how many lines we want:
 
 ```bash
 head -n 5 text.txt
@@ -101,14 +101,16 @@ head -n 5 text.txt
 
 Note that when we provided the `-u` flag to the `date` command (to get the command to print UTC time instead of local), we didn't need to provide any arguments to that particular flag (it's just on/off). But with the `-n` flag to `head`, we are specifying the number of lines we want to print out, so we have to provide a number in this case.
 
-> This is the framework for how all things work at the command line! Multiple commands can be strung together, and some commands can have many options and can grow to be quite long, but this general framework is underlying it all. **Becoming familiar with the baseline rules is important, memorizing particular commands and options is not!**
+> This is the framework for how all things work at the command line! Multiple commands can be strung together, and some commands can have many options, inputs, and outputs and can grow to be quite long, but this general framework is underlying it all. **Becoming familiar with the baseline rules is important, memorizing particular commands and options is not!**
 
 <br>
 
 ---
 <br>
+# File-system structure and moving around
 
-# System file-structure and moving around
+## Absolute vs relative path
+
 
 <h4><i>Commands presented in this section:</i></h4>
 
@@ -116,5 +118,13 @@ Note that when we provided the `-u` flag to the `date` command (to get the comma
 |:----------:|------------------|
 |`pwd`       |tells you where you are in the computer (print working directory)|
 |`ls`        |lists contents of a directory (list)|
-|`cd`|changes directories|
+|`cd`| changes directories |
 
+<h4><i>Special characters presented in this section:</i></h4>
+
+|Characters     | Meaning          |
+|:----------:|------------------|
+|`.`       | the current working directory |
+|`../`        |specifies a directory one level "above" the current working directory|
+|`~`| your "home" location |
+| `/` | your computer's "root" location |
