@@ -68,7 +68,7 @@ You will need various tools and software packages throughout the course.
 
 All activities are in Loeb G70 unless otherwise noted
 
-#### a name="20"></a> Sunday 29 July 2018
+#### <a name="20"></a> Sunday 29 July 2018
 | **Time**       | **Activity**        |
 | ------------- |:-------------:|
 | 19:00 | Opening Reception (Meigs Room on the second floor of the Swope building)  |  
