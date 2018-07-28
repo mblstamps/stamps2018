@@ -22,6 +22,12 @@ course.
 
 ## Potential Datasets 
 
+### Multidomain analyses of a longitudinal human microbiome intestinal cleanout perturbation experiment
+The response of the human gut microbiota to IIOD was evaluated by collecting fecal samples from eight healthy participants for approximately ten weeks before and ten weeks after a one-day IIOD event. A total of 419 fecal samples were collected. 16S and shotgun metagenomic data.
+Data: https://purl.stanford.edu/cf264md0197 <br>
+Article: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005706
+
+
 ### Replication and Refinement of a Vaginal Microbial Signature of Preterm Birth 
 16S vaginal swab micorbiome data for two cohorts of pregnant women. The women were enrolled using the same study design, procedures, and methods at separate sites within the United States between 2013 and 2015, and analyzed under a case-control design. One cohort, the “Stanford” cohort, was enrolled from women presenting to the obstetrical clinics of the Lucille Packard Children’s Hospital at Stanford University for prenatal care. The underlying population is predominantly Caucasian and Asian and has a low risk for PTB (<10%); the Stanford cohort analyzed here was selected to enrich for PTB outcomes. Another cohort, the “UAB” cohort, was enrolled from women referred to the UAB for intramuscular 17α-hydroxyprogesterone caproate therapy due to a history of prior preterm delivery.  <br>
 Data: https://purl.stanford.edu/yb681vm1809 <br>
@@ -36,6 +42,11 @@ Code and data is in that paper: http://statweb.stanford.edu/~susan/papers/PSBRR.
    can load data in R with: <br>
      >library("phyloseq") <br>
      >data(enterotypes)
+     
+### Compositon of the mouse microbiome over time post-weaning
+16S data of fecal samples from mice collected on a daily basis for 365 days post weaning. During the first 150 days post weaning (dpw), nothing was done to the mice except allow them to eat, get fat, and be merry. The Schloss lab was curious whether the rapid change in weight observed during the first 10 dpw affected the stability microbiome compared to the microbiome observed between days 140 and 150. A subset of this data is also available - the flow files for one animal at 10 time points (5 early and 5 late). In addition, to sequencing samples from mice fecal material, they resequenced a mock community composed of genomic DNA from 21 bacterial strains. 
+Data: Example data and full data available from the logistics section of the Schloss lab [mothur MiSeq SOP](https://www.mothur.org/wiki/MiSeq_SOP)
+Article: http://aem.asm.org/content/79/17/5112.full
 
 ### Bacterial microbiome in the human oral cavity shaped by salivary flow
 16S data for oral samples and oral and salivary flow metadata. Subjects were recruited into four cohorts: (1) 11 healthy adults were recruited into a “discovery cohort”; (2) 7 additional healthy adults were recruited into a “control cohort” for the validation data set; (3) 3 additional healthy adults were recruited into a “mucosal biogeography cohort”; and (4) 10 individuals who experienced low salivary flow due to the autoimmune disorder, SS, were recruited into a “low-flow cohort” for the validation data set. One individual in each of the discovery and validation cohorts also participated in the mucosal biogeography cohort. <br>
