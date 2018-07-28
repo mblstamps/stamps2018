@@ -1,6 +1,6 @@
 ## Installation Instructions
 
-These are notes on installation for the various tools and packages we'll use throughout the course
+These are notes on installation for the various tools and packages we'll use throughout the course.
 
 ## Before you arrive
 
@@ -33,5 +33,20 @@ Linux – https://cran.r-project.org/bin/linux/
 Rstudio is an interface for R that not only makes everything you will do in R easier and more organized, but it’s also invaluable for reproducibility of your analyses as it makes it second-nature to generate and save log files (R scripts) of everything you’re doing.
 
 Download and install the appropriate version of RStudio for your system from here: https://www.rstudio.com/products/rstudio/download/#download
+
+
+## Connecting to the MBL Servers
+
+On your badge, you have a username and password. That will be your account for the course. 
+
+To connect, we'll use **ssh**. At the command line type
+
+`ssh `
+
+When prompted type in your username and password.
+
+The first time you log in you will get a message about security. Say 'yes'. 
+
+This will take you to the prompt.
 
 ## Other tools used in the course
