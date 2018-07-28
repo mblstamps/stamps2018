@@ -51,4 +51,6 @@ This will take you to a prompt. This is called the 'gateway'. We won't work here
 
 `ssh class-0*` where * is whatever number you have
 
+Now you're at the command linee prompt that you'll use for much of the course.
+
 ## Other tools used in the course
