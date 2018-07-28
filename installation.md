@@ -41,12 +41,14 @@ On your badge, you have a username and password. That will be your account for t
 
 To connect, we'll use **ssh**. At the command line type
 
-`ssh `
+`ssh class.mbl.edu`
 
-When prompted type in your username and password.
+When prompted type in your login username and password.
 
 The first time you log in you will get a message about security. Say 'yes'. 
 
-This will take you to the prompt.
+This will take you to a prompt. This is called the 'gateway'. We won't work here. On your badge you have something that says e.g. 'class-03'. That's where you'll be working for the course, so we don't overload the computing resources. Type:
+
+`ssh class-0*` where * is whatever number you have
 
 ## Other tools used in the course
