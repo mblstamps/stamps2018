@@ -39,18 +39,26 @@ Download and install the appropriate version of RStudio for your system from her
 
 On your badge, you have a username and password. That will be your account for the course. 
 
-To connect, we'll use **ssh**. At the command line type
+To connect, we'll use **ssh**, a command that let's us establish a secure connnection. At the command line type the following, but replace <USERNAME> with your username:
 
-`ssh class.mbl.edu`
+`ssh <USERNAME>@class.mbl.edu`
 
-When prompted type in your login username and password.
+Don't include the brackets either. For example, if your username was "bsmith", the command would look like `ssh bsmith@class.mbl.edu`. 
 
-The first time you log in you will get a message about security. Say 'yes'. 
+The first time you log in you will get a message about security. Type "yes", and press `enter`. 
 
-This will take you to a prompt. This is called the 'gateway'. We won't work here. On your badge you have something that says e.g. 'class-03'. That's where you'll be working for the course, so we don't overload the computing resources. Type:
+Then it will ask you for your password. Type the password listed on your badge and press `enter`; the cursor will not respond, but it is still be entered as you type.
 
-`ssh class-0*` where * is whatever number you have
+This will take you to a prompt that might look like this "-bash-4.2$ ". This is called the 'gateway'. We won't be doing our work here though, we're going to take one more step and log into specific servers so we don't overload the computing resources. 
 
-Now you're at the command linee prompt that you'll use for much of the course.
+On your badge you also have something that says a class and a number, e.g. "class-03". Now we want to `ssh` into that specific server, so enter the following, but change the <??> to your specific class number:
+
+`ssh class-<??>` 
+
+For example, if your class number is "class-03", the command would look like: `ssh class-03`.
+
+Then if it asks for you password again, enter it the same way as above and press `enter`.
+
+Now you're at the command line prompt that you'll use for much of the course.
 
 ## Other tools used in the course
