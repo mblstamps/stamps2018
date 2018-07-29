@@ -39,11 +39,11 @@ Download and install the appropriate version of RStudio for your system from her
 
 On your badge, you have a username and password. That will be your account for the course. 
 
-To connect, we'll use **ssh**, a command that let's us establish a secure connnection. At the command line type the following, but replace <USERNAME> with your username:
+To connect, we'll use **ssh**, a command that let's us establish a secure connnection. At the command line type the following, but replace "\<USERNAME\>" with your username:
 
 `ssh <USERNAME>@class.mbl.edu`
 
-Don't include the brackets either. For example, if your username was "bsmith", the command would look like `ssh bsmith@class.mbl.edu`. 
+Don't include the brackets. For example, if your username was "bsmith", the command would look like `ssh bsmith@class.mbl.edu`. 
 
 The first time you log in you will get a message about security. Type "yes", and press `enter`. 
 
@@ -51,11 +51,11 @@ Then it will ask you for your password. Type the password listed on your badge a
 
 This will take you to a prompt that might look like this "-bash-4.2$ ". This is called the 'gateway'. We won't be doing our work here though, we're going to take one more step and log into specific servers so we don't overload the computing resources. 
 
-On your badge you also have something that says a class and a number, e.g. "class-03". Now we want to `ssh` into that specific server, so enter the following, but change the <??> to your specific class number:
+On your badge you also have something that says a class and a number, e.g. "class-03". Now we want to `ssh` into that specific server, so enter the following, but change the "\<??>\" to your specific class number:
 
 `ssh class-<??>` 
 
-For example, if your class number is "class-03", the command would look like: `ssh class-03`.
+Again, don't include the brackets. For example, if your class number is "class-03", the command would look like: `ssh class-03`.
 
 Then if it asks for you password again, enter it the same way as above and press `enter`.
 
