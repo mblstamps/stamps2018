@@ -74,7 +74,7 @@ All activities are in Loeb G70 unless otherwise noted
 | 09:00      | Welcome & Code of Conduct (Mihai Pop and Tracy Teal) |
 | 09:15 | Introduction to MBL and Microbiome Science (Mitch Sogin) |
 | 10:15 | Break|
-| 10:30 | _Tutorial_: Introduction to the command line & MBL infrastructure (Mike Lee) |
+| 10:30 | _Tutorial_: [Introduction to the command line](https://astrobiomike.github.io/stamps2018/unix_intro) & MBL infrastructure (Mike Lee) |
 | 12:00 | Lunch   | 
 | 14:00 | _Tutorial:_ [Introduction to R](https://datacarpentry.org/R-ecology-lesson/) (Tracy Teal) |
 | 17:00 | Dinner  | McCrary Dining Hall   |
