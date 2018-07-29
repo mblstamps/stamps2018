@@ -78,8 +78,7 @@ All activities are in Loeb G70 unless otherwise noted
 | 12:00 | Lunch   | 
 | 14:00 | _Tutorial:_ [Introduction to R](https://datacarpentry.org/R-ecology-lesson/) (Tracy Teal) |
 | 17:00 | Dinner  | McCrary Dining Hall   |
-| 19:00 | _Guest Lecture:_ Jay Lennon |
-| 20:00 | More R: Open lab self-guided or class tutorial |
+| 19:00 | More R: Open lab self-guided or class tutorial |
 
 #### <a name="22"></a> Tuesday 31 July 2018
 | Time       | Activity        | 
@@ -89,8 +88,8 @@ All activities are in Loeb G70 unless otherwise noted
 | 12:15 | Promega Lunch (Swope private dining room)   |
 | 14:00 | Statistics & statistical thinking (Amy Willis) |
 | 17:00 | Dinner  | 
-| 19:00 | _Tutorial_: phyloseq (Susan Holmes) |
-| 20:00 | _Open lab_: More practice with UNIX, R or phyloseq |
+| 19:00 | _Guest Lecture:_ Jay Lennon |
+| 20:00 | _Tutorial_: phyloseq (Susan Holmes) |
 
 #### <a name="23"></a>  Wednesday 01 August 2018
 | Time       | Activity        |
