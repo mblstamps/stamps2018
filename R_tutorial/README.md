@@ -39,14 +39,10 @@ abundances <- read.csv("FWS_OTUs.txt", sep = "\t", row.names = 1, header = T)
 ``` r 
 install.packages("dplyr")
 install.packages("magrittr")
-install.packages("devtools")
-install.packages("ggplot2")
-source("https://bioconductor.org/biocLite.R")
-biocLite("phyloseq")
 install.packages("parallel")
 install.packages("foreach")
 install.packages("doParallel")
-devtools::install_github("adw96/breakaway")
+
 ```
 
 10. You are now set up! The tutorials are set up in the following order:
@@ -59,5 +55,14 @@ devtools::install_github("adw96/breakaway")
 6_parallel.R
 7_markdown.R 
 ```
+
+## Assignment for tomorrow: Please install the following packages tonight so that they are ready for tomorrow
+```
+install.packages("devtools")
+source("https://bioconductor.org/biocLite.R")
+biocLite("phyloseq")
+devtools::install_github("adw96/breakaway")
+```
+
 
 Happy coding!
