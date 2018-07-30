@@ -19,7 +19,7 @@ utils::unzip("R_tutorial.zip")
 
 5. Move into the working directory that was created:
 ``` r
-setwd("./STAMPS2018")
+setwd("STAMPS2018")
 ```
 
 6. Before moving on, check to make sure you have 7 ".R" files and 2 ".txt" files:
