@@ -13,13 +13,13 @@ setwd("YOUR FILEPATH HERE")
 
 4. Run the following code in the R console: 
 ``` r
-utils::download.file("https://github.com/mblstamps/stamps2018/R_tutorial/R_tutorial.zip", "R_tutorial.zip")
+utils::download.file("https://github.com/mblstamps/stamps2018/blob/master/R_tutorial/R_tutorial.zip?raw=true", "R_tutorial.zip")
 utils::unzip("R_tutorial.zip")
 ```
 
 5. Move into the working directory that was created:
 ``` r
-setwd("./STAMPS2018")
+setwd("STAMPS2018")
 ```
 
 6. Before moving on, check to make sure you have 7 ".R" files and 2 ".txt" files:
