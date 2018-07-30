@@ -13,7 +13,7 @@ setwd("YOUR FILEPATH HERE")
 
 4. Run the following code in the R console: 
 ``` r
-utils::download.file("https://github.com/mblstamps/stamps2018/R_tutorial/R_tutorial.zip", "R_tutorial.zip")
+utils::download.file("https://github.com/mblstamps/stamps2018/blob/master/R_tutorial/R_tutorial.zip?raw=true", "R_tutorial.zip")
 utils::unzip("R_tutorial.zip")
 ```
 
