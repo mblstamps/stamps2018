@@ -54,7 +54,7 @@ install.packages("doParallel")
 7_markdown.R 
 ```
 
-## Assignment for tomorrow: Please install the following packages tonight so that they are ready for tomorrow
+## Assignment for tomorrow: Please complete the following tonight so that everything is setup for tomorrow
 
 1. Download gfortran, which is needed for certain R packages and will make your life much easier in the future! Link: https://gcc.gnu.org/wiki/GFortranBinaries
 
