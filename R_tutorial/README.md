@@ -6,7 +6,7 @@ Welcome! This subdirectory contains R Tutorials for STAMPS 2018 @ MBL.
 
 2. Open RStudio.
 
-2. Set your filepath to a location on your computer that you in which you are comfortable saving files using:
+2. Set your filepath to a location on your computer in which you are comfortable saving files using:
 ``` r
 setwd("YOUR FILEPATH HERE")
 ```
