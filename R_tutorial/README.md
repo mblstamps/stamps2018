@@ -35,7 +35,7 @@ covariates <- read.csv("FWS_covariates.txt", sep = "\t")
 abundances <- read.csv("FWS_OTUs.txt", sep = "\t", row.names = 1, header = T)
 ```
 
-9. Next, install all the packages we will be needing for this tutorial:
+9. Next, install all the packages we will be needing:
 ``` r 
 install.packages("dplyr")
 install.packages("magrittr")
