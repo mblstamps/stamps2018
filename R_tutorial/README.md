@@ -2,6 +2,9 @@
 
 Welcome! This subdirectory contains R Tutorials for STAMPS 2018 @ MBL. 
 
+> **NOTE**
+[Link for Windows users for download](https://github.com/adw96/stamps2018/tree/master/r)
+
 1. Make sure you have downloaded R and RStudio.
 
 2. Open RStudio.
