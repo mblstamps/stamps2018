@@ -56,6 +56,9 @@ install.packages("doParallel")
 
 ## Assignment for tomorrow: Please complete the following tonight so that everything is setup for tomorrow
 
+> **NOTE**  
+**If you have a windows computer, you can skip the first step and start at step 2.** If you have a Mac, start at step 1. 
+
 1. Download gfortran, which is needed for certain R packages and will make your life much easier in the future! Link: https://gcc.gnu.org/wiki/GFortranBinaries
 
 
