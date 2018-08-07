@@ -580,6 +580,6 @@ about --
 
 Chat with Titus if you are interested in these use cases!
 
-What should you definiely _not_ use sourmash for?
+What should you definitely _not_ use sourmash for?
 
 * detection of distant taxonomic/phylogenetic relationships
