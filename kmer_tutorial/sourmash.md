@@ -393,7 +393,7 @@ from the
 
 ```
 wget https://github.com/dib-lab/sourmash/raw/master/doc/_static/shakya-unaligned-contigs.sig
-sourmash lca gather shakya-unaligned-contigs.sig genbank-k31.lca.json
+sourmash lca gather shakya-unaligned-contigs.sig /class/stamps-shared/sourmash-db/genbank-k31.lca.json.gz
 ```
 
 This should yield:
