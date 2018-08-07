@@ -60,9 +60,34 @@ sourmash search assembly.sig reads.sig --containment
 ```
 note that it's not symmetric!
 
-let's do some Venn diagramming...
+<!--
+ mbl% sourmash search reads.sig assembly.sig
+ 
+similarity   match
+----------   -----
+ 44.1%       Reads
+ 
+mbl% sourmash search reads.sig assembly.sig --containment
+ 
+1 matches:
+similarity   match
+----------   -----
+ 44.1%       Assembly
+  
+mbl% sourmash search assembly.sig reads.sig --containment
+  
+1 matches:
+similarity   match
+----------   -----
+ 99.9%       Reads
+-->
+
+How do you interpret this? let's do some Venn diagramming...
 
 ### What's our mystery sample?
+
+One thing we can do with Jaccard similarity is *search all of genbank*.
+Let's do that with our mystery sample!
 
 #### Search the assembly against genbank for the best Jaccard similarity:
 ```
@@ -140,6 +165,9 @@ overlap     p_query p_match
 * what is our mystery sample?
 * we see that E. coli shows up with one analysis - which analysis or analyses should we believe?
 * how might we move to be on more certain ground?
+
+Summary statement: these are ~low resolution analyses. Don't trust
+'em completely - but you can use 'em to guide your next analyses.
 
 ## K-mers!
 
@@ -233,9 +261,9 @@ Yes! Check out this figure from the [MetaPalette paper](http://msystems.asm.org/
 
 ![](_static/kmers-metapalette.png)
 
-here, the Koslicki and Falush show that k-mer similarity works to group microbes by genus, at k=40\. If you go longer (say k=50) then you get only very little similarity between different species.
+here, Koslicki and Falush show that k-mer similarity works to group microbes by genus, at k=40\. If you go longer (say k=50) then you get only very little similarity between different species.
 
-I looked into this [recently](http://ivory.idyll.org/blog/2017-how-specific-kmers.html) - here is an estimate of how many k-mers are specific at each
+I looked into this [recently](http://ivory.idyll.org/blog/2017-how-specific-kmers.html) - here is an estimate of how many 31-mers are specific at each
 level of the Genbank taxonomy:
 
 ```
@@ -302,9 +330,10 @@ Compute a scaled MinHash signature from our reads:
 
 ## Compare many signatures and build a tree.
 
-[![compare](_static/Sourmash_flow_diagrams_compare.thumb.png)](_static/Sourmash_flow_diagrams_compare.png)
+But we don't have to stick with doing 1-1 comparisons. What else can we do?
+We can build distance matrices of _many_ signatures. Let's give it a try:
 
-## Next steps
+[![compare](_static/Sourmash_flow_diagrams_compare.thumb.png)](_static/Sourmash_flow_diagrams_compare.png)
 
 ```
 mkdir ecoli_many_sigs
