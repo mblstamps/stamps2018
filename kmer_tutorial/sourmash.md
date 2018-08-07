@@ -373,18 +373,20 @@ How do you interpret this?
 What does the little dot on the lower left mean? What is that and why is
 it occurring?
 
+...so this is another nice investigative tool.
+
 ## What's in my metagenome?
 
 Sourmash comes with a bunch of 
 [databases](http://sourmash.rtfd.io/en/latest/databases.html). I've
 pre-installed two of them for you -- 
 
-* /class/stamps-shared/sourmash-db/genbank-d2-k31.sbt.json - this is an SBT search database of all genbank microbes
-* /class/stamps-shared/sourmash-db/genbank-k31.lca.json - this is an LCA search database of all genbank microbes
+* `/class/stamps-shared/sourmash-db/genbank-d2-k31.sbt.json` - this is an SBT search database of all genbank microbes
+* `/class/stamps-shared/sourmash-db/genbank-k31.lca.json` - this is an LCA search database of all genbank microbes
 
 ----
 
-Here is gather running on a signature generated
+Here is lca gather running on a signature generated
 from some sequences that assemble (but don't align to known genomes)
 from the
 [Shakya et al. 2013 mock metagenome paper](https://www.ncbi.nlm.nih.gov/pubmed/23387867).
@@ -460,8 +462,9 @@ Why might some of things in a metagenome be unassigned?
 
 It is straightforward to build your own databases for use with
 `search` and `lca gather`; this is of interest if you have dozens or
-hundreds of sequencing data sets in your group. Ping us if you want us
-to write that up.
+hundreds of sequencing data sets in your
+group. [Ping us](https://github.com/dib-lab/sourmash/issues/new) if
+you want us to write that up.
 
 ## Switch to presentation - what is actually going on above?
 
