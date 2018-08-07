@@ -473,7 +473,7 @@ hundreds of sequencing data sets in your
 group. [Ping us](https://github.com/dib-lab/sourmash/issues/new) if
 you want us to write that up.
 
-## Switch to presentation - what is actually going on above?
+## More discussion!
 
 Some questions --
 
@@ -513,11 +513,42 @@ found 8 matches total;
 the recovered matches hit 76.9% of the query
 ```
 
-Compare with [the results from TIPP](https://github.com/MGNute/stamps-tutorial/blob/master/tipp/out/TIPP-95-COGS-SRR059420/abundance.genus.csv).
+Compare with
+[the results from TIPP](https://github.com/MGNute/stamps-tutorial/blob/master/tipp/out/TIPP-95-COGS-SRR059420/abundance.genus.csv).
 This nicely illustrates the _limitations_ of sourmash - with shallow
-sampling, you miss a lot of stuff! That's because of the way sourmash works.
+sampling, you miss a lot of stuff! That's because of the way sourmash
+gather works.
 
 More on that below.
+
+You can also see the lca gather results:
+
+```
+sourmash lca gather sepp.sig /class/stamps-shared/sourmash-db/genbank-k31.lca.json.gz
+```
+
+will yield:
+
+
+```
+overlap     p_query p_match 
+---------   ------- --------
+0.8 Mbp      48.2%    5.5%      Bacteroides vulgatus
+420.0 kbp    24.7%    1.7%      Bacteroides ovatus
+90.0 kbp      5.3%    0.2%      Bacteroides fragilis
+20.0 kbp      1.2%    0.8%      Carnobacterium sp. N15.MGS-207 (** 1 equal matches)
+10.0 kbp      0.6%    0.2%      Escherichia sp. 1_1_43 (** 53 equal matches)
+10.0 kbp      0.6%    0.3%      Bacteroides vulgatus CAG:6 (** 14 equal matches)
+10.0 kbp      0.6%    0.3%      Bacteroides mediterraneensis (** 13 equal matches)
+10.0 kbp      0.6%    0.1%      Parabacteroides merdae (** 6 equal matches)
+10.0 kbp      0.6%    0.3%      Megamonas hypermegale (** 3 equal matches)
+
+17.6% (300.0 kbp) of hashes have no assignment.
+```
+
+## Switch to presentation - what are we actually doing?
+
+
 
 ## Final thoughts on sourmash
 
