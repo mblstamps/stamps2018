@@ -1,8 +1,5 @@
 # K-mers, k-mer specificity, and comparing samples with k-mer Jaccard distance.
 
----
-
-
 ## Objectives
 
 1. Discuss the power of k-mers 
@@ -10,7 +7,143 @@
 3. Compare datasets and build a tree
 4. Determine what's in a metagenome by classifying reads into taxa 
 
+## But first! Revisiting our mystery sample!
+
+### Calculate some signatures from our reads & assembly.
+
+Log into your class server (should be `class-XX`). Note, if you can't connect directly to `class-XX` you can connect in first to `class.mbl.edu` and then `ssh class-XX`.
+
+Activate conda as before:
+```
+export PATH="/class/stamps-software/miniconda3/bin:$PATH"
+```
+
+Create a working directory for this section:
+```
+mkdir ~/kmers
+cd ~/kmers
+```
+
+Copy in some files from Titus's account:
+
+```
+cp ~cbrown/workflows/*.fq.gz .
+cp ~cbrown/workflows/mystery.assembly/final.contigs.fa ./assembly.fa
+ls
+```
+
+Calculate sourmash signatures from the reads and the assembly.
+
+```
+sourmash compute -k 31 --scaled=1000 assembly.fa --merge="Assembly" -o assembly.sig
+
+sourmash compute -k 31 --scaled=1000 sample.R*.fq.gz --merge="Reads" -o reads.sig
+```
+
+You should now have `reads.sig` and `assembly.sig`.
+
+### Compare reads and assembly!
+
+Calculate Jaccard similarity:
+
+```
+sourmash search reads.sig assembly.sig
+sourmash search assembly.sig reads.sig
+```
+note that it's symmetric!
+
+Calculate Jaccard containment:
+
+```
+sourmash search reads.sig assembly.sig --containment
+sourmash search assembly.sig reads.sig --containment
+```
+note that it's not symmetric!
+
+let's do some Venn diagramming...
+
+### What's our mystery sample?
+
+#### Search the assembly against genbank for the best Jaccard similarity:
+```
+sourmash search assembly.sig /class/stamps-shared/sourmash-db/genbank-d2-k31.sbt.json
+```
+
+and you will see
+
+```
+similarity   match
+----------   -----
+ 51.0%       FQVV01000014.1 Tenacibaculum mesophilum strain DSM 13764 ...
+ 48.2%       LDOD01000001.1 Tenacibaculum mesophilum strain HMG1 scaff...
+```
+
+#### "Gather" the assembly against genbank for the best nonoverlappiung Jaccard containment (as a metagenome):
+
+```
+sourmash gather assembly.sig /class/stamps-shared/sourmash-db/genbank-d2-k31.sbt.json
+```
+
+and you will see
+
+```
+overlap     p_query p_match
+---------   ------- -------
+2.3 Mbp       63.4%   72.4%    FQVV01000014.1 Tenacibaculum mesophil...
+2.3 Mbp        8.9%    9.5%    LDOD01000001.1 Tenacibaculum mesophil...
+148.0 kbp      0.4%    0.5%    JADN01000003.1 Tenacibaculum sp. 47A_...
+found less than 8.0 kbp in common. => exiting
+
+found 3 matches total;
+the recovered matches hit 72.7% of the query
+```
+
+#### Note you can also "gather" the reads against genbank:
+
+```
+sourmash gather reads.sig /class/stamps-shared/sourmash-db/genbank-d2-k31.sbt.json
+```
+
+and you will see:
+```
+overlap     p_query p_match
+---------   ------- -------
+2.4 Mbp       27.9%   73.0%    FQVV01000014.1 Tenacibaculum mesophil...
+2.3 Mbp        3.9%    9.6%    LDOD01000001.1 Tenacibaculum mesophil...
+found less than 16.0 kbp in common. => exiting
+
+found 2 matches total;
+the recovered matches hit 31.8% of the query
+```
+
+#### And you can also use a lowest common ancestor algorithm to inspect the assembly:
+
+```
+sourmash lca gather assembly.sig /class/stamps-shared/sourmash-db/genbank-k31.lca.json.gz
+```
+
+which gives some interesting results, and some weird results:
+
+```
+overlap     p_query p_match
+---------   ------- --------
+2.9 Mbp      71.1%   63.6%      Tenacibaculum mesophilum
+40.0 kbp      1.0%    0.0%      Escherichia coli (** 2 equal matches)
+20.0 kbp      0.5%    0.7%      Tenacibaculum sp. 47A_GOM-205m
+10.0 kbp      0.2%    0.3%      Mesonia phycicola
+
+27.1% (1.1 Mbp) of hashes have no assignment.
+```
+
+### Questions to ask:
+
+* what is our mystery sample?
+* we see that E. coli shows up with one analysis - which analysis or analyses should we believe?
+* how might we move to be on more certain ground?
+
 ## K-mers!
+
+(You can read a higher level discussion [in this blog post](http://ivory.idyll.org/blog/2017-something-about-kmers.html))
 
 K-mers are a fairly simple concept that turn out to be tremendously powerful.
 
@@ -102,6 +235,19 @@ Yes! Check out this figure from the [MetaPalette paper](http://msystems.asm.org/
 
 here, the Koslicki and Falush show that k-mer similarity works to group microbes by genus, at k=40\. If you go longer (say k=50) then you get only very little similarity between different species.
 
+I looked into this [recently](http://ivory.idyll.org/blog/2017-how-specific-kmers.html) - here is an estimate of how many k-mers are specific at each
+level of the Genbank taxonomy:
+
+```
+superkingdom: 38,077,000 (0.4%)
+phylum: 24,627,000 (0.3%)
+class: 39,306,000 (0.4%)
+order: 66,423,000 (0.7%)
+family: 97,908,000 (1.1%)
+genus: 1,103,223,000 (12.0%)
+species: 7,818,876,000 (85.1%)
+```
+
 ## Using k-mers to compare samples against each other
 
 So, one thing you can do is use k-mers to compare genomes to genomes, or read data sets to read data sets: data sets that have a lot of similarity probably are similar or even the same genome.
@@ -126,23 +272,23 @@ We have implemented a MinHash approach in our [sourmash software](https://github
 
 ## Installing sourmash
 
-To install sourmash, run:
+To install sourmash, enable
+[bioconda](https://angus.readthedocs.io/en/2018/jetstream-bioconda-config.html#what-is-bioconda)
+and run:
 
 ```
 conda install -y sourmash
 ```
+...but this has already been done for you on the STAMPS cluster.
 
+So, instead, you just need to activate conda:
+
+```
+export PATH="/class/stamps-software/miniconda3/bin:$PATH"
+```
 
 ## Generate a signature for Illumina reads
 
-Download some reads and a reference genome:
-
-```
-mkdir ~/data
-cd ~/data
-curl -L https://osf.io/frdz5/download -o ecoli_ref-5m.fastq.gz 
-curl -L https://osf.io/963dg/download -o ecoliMG1655.fa.gz 
-```
 [![qc](_static/Sourmash_flow_diagrams_QC.thumb.png)](_static/Sourmash_flow_diagrams_QC.png)
 
 
@@ -150,63 +296,15 @@ curl -L https://osf.io/963dg/download -o ecoliMG1655.fa.gz
 
 Compute a scaled MinHash signature from our reads:
 
-```
-mkdir ~/sourmash
-cd ~/sourmash
-
-sourmash compute --scaled 2000 ~/data/ecoli_ref-5m.fastq.gz -o ecoli-reads.sig -k 31
-```
-
 ## Compare reads to assemblies
-
-Use case: how much of the read content is contained in the reference genome?
 
 [![search](_static/Sourmash_flow_diagrams_search.thumb.png)](_static/Sourmash_flow_diagrams_search.png)
 
-Build a signature for an E. coli genome:
+## Compare many signatures and build a tree.
 
-```
-sourmash compute --scaled 2000 -k 31 ~/data/ecoliMG1655.fa.gz -o ecoli-genome.sig
-```
+[![compare](_static/Sourmash_flow_diagrams_compare.thumb.png)](_static/Sourmash_flow_diagrams_compare.png)
 
-and now evaluate *containment*, that is, what fraction of the read content is
-contained in the genome:
-
-```
-sourmash search -k 31 ecoli-reads.sig ecoli-genome.sig --containment
-```
-
-and you should see:
-
-```
-loaded query: /home/diblions/data/ecoli_ref-... (k=31, DNA)
-loaded 1 signatures.
-
-1 matches:
-similarity   match
-----------   -----
-  9.7%       /home/diblions/data/ecoliMG1655.fa.gz
-```
-
-Why are only 10% or so of our k-mers from the reads in the genome!?
-Any ideas?
-
-Try the reverse - why is it bigger?
-
-```
-sourmash search -k 31 ecoli-genome.sig ecoli-reads.sig --containment
-```
-
-(...but 100% of our k-mers from the genome are in the reads!?)
-
-
-## Make and search a database quickly.
-
-Suppose that we have a collection of signatures (made with `sourmash
-compute` as above) and we want to search it with our newly assembled
-genome (or the reads, even!). How would we do that?
-
-Let's grab a sample collection of 50 E. coli genomes and unpack it --
+## Next steps
 
 ```
 mkdir ecoli_many_sigs
@@ -218,80 +316,9 @@ tar xzf eschericia-sigs.tar.gz
 rm eschericia-sigs.tar.gz
 
 cd ../
-```
 
-This will produce 50 files named `ecoli-N.sig` in the `ecoli_many_sigs` --
-
-```
-ls ecoli_many_sigs
-```
-
-Let's turn this into an easily-searchable database with `sourmash index` --
-
-```
 sourmash index -k 31 ecolidb ecoli_many_sigs/*.sig
 ```
-What does the database look like and how does the search work?
-
-![](_static/SBT.png)
-
-One point to make with this is that the search can quickly narrow down
-which signatures match your query, without losing any matches.  It's a
-clever example of how computer scientists can actually make life
-better :).
-
-----
-
-And now we can search!
-
-```
-sourmash search ecoli-genome.sig ecolidb.sbt.json -n 20
-```
-
-You should see output like this:
-
-```
-# running sourmash subcommand: search
-select query k=31 automatically.
-loaded query: /home/tx160085/data/ecoliMG165... (k=31, DNA)
-loaded SBT ecolidb.sbt.json
-Searching SBT ecolidb.sbt.json
-49 matches; showing first 20:
-similarity   match
-----------   -----
- 75.9%       NZ_JMGW01000001.1 Escherichia coli 1-176-05_S4_C2 e117605...
- 73.0%       NZ_JHRU01000001.1 Escherichia coli strain 100854 100854_1...
- 71.9%       NZ_GG774190.1 Escherichia coli MS 196-1 Scfld2538, whole ...
- 70.5%       NZ_JMGU01000001.1 Escherichia coli 2-011-08_S3_C2 e201108...
- 69.8%       NZ_JH659569.1 Escherichia coli M919 supercont2.1, whole g...
- 59.9%       NZ_JNLZ01000001.1 Escherichia coli 3-105-05_S1_C1 e310505...
- 58.3%       NZ_JHDG01000001.1 Escherichia coli 1-176-05_S3_C1 e117605...
- 56.5%       NZ_MIWF01000001.1 Escherichia coli strain AF7759-1 contig...
- 56.1%       NZ_MOJK01000001.1 Escherichia coli strain 469 Cleandata-B...
- 56.1%       NZ_MOGK01000001.1 Escherichia coli strain 676 BN4_676_1_(...
- 50.5%       NZ_KE700241.1 Escherichia coli HVH 147 (4-5893887) acYxy-...
- 50.3%       NZ_APWY01000001.1 Escherichia coli 178200 gec178200.conti...
- 48.8%       NZ_LVOV01000001.1 Escherichia coli strain swine72 swine72...
- 48.8%       NZ_MIWP01000001.1 Escherichia coli strain K6412 contig_00...
- 48.7%       NZ_AIGC01000068.1 Escherichia coli DEC7C gecDEC7C.contig....
- 48.2%       NZ_LQWB01000001.1 Escherichia coli strain GN03624 GCID_EC...
- 48.0%       NZ_CCQJ01000001.1 Escherichia coli strain E. coli, whole ...
- 47.3%       NZ_JHMG01000001.1 Escherichia coli O121:H19 str. 2010EL10...
- 47.2%       NZ_JHGJ01000001.1 Escherichia coli O45:H2 str. 2009C-4780...
- 46.5%       NZ_JHHE01000001.1 Escherichia coli O103:H2 str. 2009C-327...
-
-```
-
-identifying what genome is in the signature. Some pretty good matches but nothing above %75. Why? What are some things we should think about when we're doing taxonomic classification? 
-
-## Compare many signatures and build a tree.
-
-Adjust plotting (this is a bug in sourmash :) --
-```
-echo 'backend : Agg' > matplotlibrc
-```
-
-[![compare](_static/Sourmash_flow_diagrams_compare.thumb.png)](_static/Sourmash_flow_diagrams_compare.png)
 
 Compare all the things:
 
@@ -319,44 +346,16 @@ it occurring?
 
 ## What's in my metagenome?
 
-First, let's download and unpack the database we'll use for classification
-```
-cd ~/sourmash
-curl -L https://osf.io/zskb9/download -o genbank-k31.lca.json.gz 
-gunzip genbank-k31.lca.json.gz
-```
-This database is a GenBank index of all
-the microbial genomes
--- this one contains sketches of all 87,000 microbial genomes (including viral and fungal). See
-[available sourmash databases](http://sourmash.rtfd.io/en/latest/databases.html)
-for more information.
+Sourmash comes with a bunch of 
+[databases](http://sourmash.rtfd.io/en/latest/databases.html). I've
+pre-installed two of them for you -- 
 
-After this database is unpacked, it produces a file
-`genbank-k31.lca.json`.
+* /class/stamps-shared/sourmash-db/genbank-d2-k31.sbt.json - this is an SBT search database of all genbank microbes
+* /class/stamps-shared/sourmash-db/genbank-k31.lca.json - this is an LCA search database of all genbank microbes
 
-Next, run the 'lca gather' command to see what's in your ecoli genome --
-```
-sourmash lca gather ecoli-genome.sig genbank-k31.lca.json
-```
+----
 
-and you should get:
-
-```
-loaded 1 LCA databases. ksize=31, scaled=10000
-loaded query: /home/diblions/data/ecoliMG165... (k=31)
-
-overlap     p_query p_match 
----------   ------- --------
-4.9 Mbp     100.0%    2.3%      Escherichia coli
-
-Query is completely assigned.
-```
-
-In this case, the output is kind of boring because this is a single
-genome.  But! You can use this on metagenomes (assembled and
-unassembled) as well; you've just got to make the signature files.
-
-To see this in action, here is gather running on a signature generated
+Here is gather running on a signature generated
 from some sequences that assemble (but don't align to known genomes)
 from the
 [Shakya et al. 2013 mock metagenome paper](https://www.ncbi.nlm.nih.gov/pubmed/23387867).
@@ -435,16 +434,15 @@ It is straightforward to build your own databases for use with
 hundreds of sequencing data sets in your group. Ping us if you want us
 to write that up.
 
+## Switch to presentation - what is actually going on above?
+
 ## Final thoughts on sourmash
 
-There are many tools like Kraken and Kaiju that can do taxonomic
-classification of individual reads from metagenomes; these seem to
-perform well (albeit with high false positive rates) in situations
-where you don't necessarily have the genome sequences that are in the
-metagenome.  Sourmash, by contrast, can estimate which known genomes are
-actually present, so that you can extract them and map/align to them.
-It seems to have a very low false positive rate and is quite sensitive
-to strains.
+Sourmash mostly implements algorithms that were already widely used
+(but does so in the context of minhash downsampling, which makes it
+much lighterweight).  In particular, the
+[Kraken tool](https://ccb.jhu.edu/software/kraken/) does the same LCA
+classification as sourmash.
 
 Above, we've shown you a few things that you can use sourmash for.  Here
 is a (non-exclusive) list of other uses that we've been thinking about --
