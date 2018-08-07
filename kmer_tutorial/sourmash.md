@@ -460,6 +460,13 @@ Why might some of things in a metagenome be unassigned?
 
 ----
 
+There are a bunch of sourmash commands for classification - [check 'em
+out here](https://sourmash.readthedocs.io/en/latest/command-line.html#sourmash-lca-subcommands) and 
+
+
+
+----
+
 It is straightforward to build your own databases for use with
 `search` and `lca gather`; this is of interest if you have dozens or
 hundreds of sequencing data sets in your
@@ -467,6 +474,50 @@ group. [Ping us](https://github.com/dib-lab/sourmash/issues/new) if
 you want us to write that up.
 
 ## Switch to presentation - what is actually going on above?
+
+Some questions --
+
+* what is the difference between 'gather' and 'lca gather'
+  * note, 'gather' returns *individual genomes*. 'lca gather' returns
+    *genomes grouped by taxonomic node.*
+  * [read more here](https://sourmash.readthedocs.io/en/latest/classifying-signatures.html)
+* how does [the growth of refseq](https://drive.google.com/file/d/1iL1K_raQHZPsIxAI2PFnuo3nnPu7Ljp5/view) impact the various algorithms? (note: Kraken uses LCA technique)
+* how does this differ from [what Tandy talked about](https://drive.google.com/file/d/1LLvFBAyEyaES5NobeCtLf42rGyXkRQO2/view) and [demonstrated](https://github.com/MGNute/stamps-tutorial/blob/master/tutorial.md)?
+
+### Compare with TIPP!
+
+```
+sourmash compute -k 31 --scaled=1000 \
+    /class/stamps-software/sepp/stamps-input-data/SRR059420_pass_1_1-25000.fasta \
+    --merge=sepp_metagenome -o sepp.sig
+
+sourmash gather sepp.sig /class/stamps-shared/sourmash-db/genbank-d2-k31.sbt.json
+```
+
+and you should get:
+
+```
+overlap     p_query p_match
+---------   ------- -------
+0.6 Mbp       37.3%   11.8%    FOBA01000106.1 Bacteroides vulgatus s...
+378.0 kbp     23.5%    5.7%    KQ968392.1 Bacteroides ovatus strain ...
+90.0 kbp       5.0%    1.5%    JGCR01000001.1 Bacteroides fragilis s...
+312.0 kbp      4.7%    1.1%    CZBG01000001.1 Bacteroides ovatus str...
+0.5 Mbp        2.6%    0.9%    ADKO01000117.1 Bacteroides vulgatus P...
+320.0 kbp      1.8%    0.4%    EQ973418.1 Bacteroides sp. 2_2_4 plas...
+0.6 Mbp        1.1%    0.3%    CP000139.1 Bacteroides vulgatus ATCC ...
+0.5 Mbp        0.9%    0.3%    JNHM01000001.1 Bacteroides vulgatus s...
+found less than 10.0 kbp in common. => exiting
+
+found 8 matches total;
+the recovered matches hit 76.9% of the query
+```
+
+Compare with [the results from TIPP](https://github.com/MGNute/stamps-tutorial/blob/master/tipp/out/TIPP-95-COGS-SRR059420/abundance.genus.csv).
+This nicely illustrates the _limitations_ of sourmash - with shallow
+sampling, you miss a lot of stuff! That's because of the way sourmash works.
+
+More on that below.
 
 ## Final thoughts on sourmash
 
@@ -476,8 +527,19 @@ much lighterweight).  In particular, the
 [Kraken tool](https://ccb.jhu.edu/software/kraken/) does the same LCA
 classification as sourmash.
 
-Above, we've shown you a few things that you can use sourmash for.  Here
-is a (non-exclusive) list of other uses that we've been thinking about --
+Above, we've shown you a few things that you can use sourmash for. Briefly,
+
+* clustering of samples by Jaccard similarity
+
+* quick search of large databases
+
+* decomposition of metagenomes into known genomes
+
+We recommend using sourmash for an initial look at your data, following
+which you should do lots of additional investigation!
+
+Here is a (non-exclusive) list of other uses that we've been thinking
+about --
 
 * detect contamination in sequencing data;
 
@@ -486,3 +548,7 @@ is a (non-exclusive) list of other uses that we've been thinking about --
 * search all of SRA for overlaps in metagenomes;
 
 Chat with Titus if you are interested in these use cases!
+
+What should you definiely _not_ use sourmash for?
+
+* detection of distant taxonomic/phylogenetic relationships
